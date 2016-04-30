@@ -7,7 +7,7 @@ mac:
 
 docker: linux
 	docker build -t undeadops/docker-go-demo .
-        docker push undeadops/docker-go-demo
+	docker push undeadops/docker-go-demo
 
 run:
 	docker run --rm -p 8080:8080 -e "PORT=8080" undeadops/docker-go-demo
