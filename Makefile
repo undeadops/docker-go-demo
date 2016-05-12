@@ -13,4 +13,4 @@ run:
 	docker run --rm -p 8080:8080 -e "PORT=8080" undeadops/docker-go-demo
 
 mongo:
-	docker run --rm --name mymongo -p 27017:27017 -v /Users/mitch/mongo:/data/db -d mongo 
+	docker run --name mymongo -p 27017:27017 -v $(shell pwd)/mongodata:/data/db -d mongo 
