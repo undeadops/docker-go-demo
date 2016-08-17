@@ -4,6 +4,6 @@ MAINTAINER Mitch Anderson <mitch@nuvi.com>
 
 ADD web /
 
-ENV PORT=8080
-
+ENV PORT=80
+EXPORT 80
 CMD ["/web"]
